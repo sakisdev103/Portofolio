@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portofolio/static/css/main.90116423.css",
+    "main.js": "/Portofolio/static/js/main.ac26971b.js",
+    "static/media/auth.png": "/Portofolio/static/media/auth.c9f75300958e93d4bb23.png",
+    "static/media/blackjack.png": "/Portofolio/static/media/blackjack.0693e1f553605c21118f.png",
+    "static/media/Movies.png": "/Portofolio/static/media/Movies.81f54202ad708bcd13bb.png",
+    "static/media/car-rental.png": "/Portofolio/static/media/car-rental.f8fd4a6d9f17f9d9555b.png",
+    "static/media/my-company.png": "/Portofolio/static/media/my-company.8dd6fc932256d7c32300.png",
+    "static/media/Camps.png": "/Portofolio/static/media/Camps.fafbb52bdfef974eaba4.png",
+    "static/media/Menu.png": "/Portofolio/static/media/Menu.09dead28fec6816d435e.png",
+    "static/media/Tabs.png": "/Portofolio/static/media/Tabs.fac3dd4290fa40b148a9.png",
+    "static/media/Gym2.png": "/Portofolio/static/media/Gym2.3ca99eac1bca4c8c3624.png",
+    "static/media/expense tracker app.png": "/Portofolio/static/media/expense tracker app.7c55dbfb942011fb8b1d.png",
+    "static/media/Grocery Bud.png": "/Portofolio/static/media/Grocery Bud.4531a6a1f2c96c2264e0.png",
+    "static/media/todo.png": "/Portofolio/static/media/todo.b3c51051f6fb2b5a8894.png",
+    "static/media/CRM.png": "/Portofolio/static/media/CRM.49622054c01d1de8502a.png",
+    "static/media/Gym.png": "/Portofolio/static/media/Gym.ee88587a0e420fe6173a.png",
+    "index.html": "/Portofolio/index.html",
+    "main.90116423.css.map": "/Portofolio/static/css/main.90116423.css.map",
+    "main.ac26971b.js.map": "/Portofolio/static/js/main.ac26971b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90116423.css",
+    "static/js/main.ac26971b.js"
+  ]
+}
