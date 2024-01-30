@@ -16,10 +16,10 @@ import crm from './images/CRM.png';
 export const projects = [
     {
         id: "1",
-        name: "Bussiness Site",
+        name: "Business Site",
         link: "https://sakisdev103.github.io/Business-Site/",
         img: myCompany,
-        description: "This used to be my company's website, i made it using html, css and javascript. In the website you will some features my company used to offer to clients as well as well as contact form that was fully working.",
+        description: "Built this application to demonstrate a fully working business website with a wide variety of features and technologies.",
         technologies: ["Html", "Css", "Javascript"]
     },
     {
@@ -27,7 +27,7 @@ export const projects = [
         name: "BlackJack",
         link: "https://sakisdev103.github.io/Blackjack/",
         img: blackjack,
-        description: "The famous blackjack game into a fully working website, this was one of many projects that helped me understand javascript in action. The website has a very simple design cause the main goal was to improve my javascript skills.",
+        description: "The famous blackjack game into a fully working application, this was one of many projects that helped me fully understand javascript in action. The application has a very simple and minimal design.",
         technologies: ["Html", "Css", "Javascript"]
     },
     {
@@ -35,7 +35,7 @@ export const projects = [
         name: "Grocery",
         link: "https://sakisdev103.github.io/Grocery-App/",
         img: grocery,
-        description: "One more amazing project that helped me undestand javascript and it's features. Even though it's minimal website it is using some advanced javascript. The user can add products to his list, delete or edit them. The list can been saved to local storage.",
+        description: "Developed using advanced javascript, despite the simplicity of the design. The user can add products to his list, delete or edit them. The list can been saved to local storage.",
         technologies: ["Html", "Css", "Javascript"]
     },
     {
@@ -43,7 +43,7 @@ export const projects = [
         name: "Expense Tracker",
         link: "https://sakisdev103.github.io/Expences-App/",
         img: expenses,
-        description: "One of the first projects i worked using react framework. This project helped me undestand the fundamentals of react how it's working. The user can an income or an expence and check his balance, furthermore, he can edit / delete items. The items are stored in local storage",
+        description: "Built using React framework. This project helped me undestand the fundamentals of react how it's working. The user can add an income or an expence and check his balance, furthermore, he can edit / delete items. The items are stored in local storage",
         technologies: ["Html", "Css", "Javascript", "React"]
     },
     {
@@ -51,7 +51,7 @@ export const projects = [
         name: "Movies",
         link: "https://sakisdev103.github.io/Movie-App/",
         img: movies,
-        description: "Another react application, which his goal was to understand react concepts and also working with api calls. The user can search for movies / series and a wide variety will be appeared on his screen, displaying info about each movie. The website is fully responsive as well as mobile friendly.",
+        description: "Developed with ReactJS combined with api calls. The user can search for movies / series and a wide variety of them will be appeared on his screen, displaying info about each movie. The application is fully responsive as well as mobile friendly.",
         technologies: ["Html", "Css", "Javascript", "React"]
     },
     {
@@ -59,7 +59,7 @@ export const projects = [
         name: "Camps",
         link: "https://sakisdev103.github.io/Camps-App/",
         img: camps,
-        description: "A multi page website which had many goals, the first goal was to transform the design into a fully responsive website, second goal was to add functionallity, i did it using react. They are many react features in this website, like react router, useEffect, useState. To explain that the application does, the user can see a wide variety o camps, search using the search bar, add this own, click in the camp of his choise to see more information about it and read comments from other users, the user can also add his own comments in the camp of his choise.",
+        description: "A multi page application which had many goals, the first goal was to transform the design into a fully responsive website, second goal was to add functionallity, i did it using react. They are many react features in this website, like react router, useEffect, useState. To explain that the application does, the user can see a wide variety of camps, search using the search bar, add this own, select the camp of his choise to see more information about it and read comments from other users, the user can also add his own comments in the camp of his choise.",
         technologies: ["Html", "Css", "Javascript", "React"]
     },
     {
@@ -75,7 +75,7 @@ export const projects = [
         name: "Todo",
         link: "https://sakisdev103.github.io/Todo-List/",
         img: todo,
-        description: "A very simple website with minimal design which i built using react. The user can add things to do or remove them from their list.",
+        description: "A very simple application with minimal design which i built using react. The user can add things to do or remove them from their list.",
         technologies: ["Html", "Css", "Javascript", "React"]
     },
     {
@@ -99,7 +99,7 @@ export const projects = [
         name: "Car Rental",
         link: "http://sakisdev103.infinityfreeapp.com/Car_Rental/",
         img: car,
-        description: "A very usefull project which helped me understand the backend of a website. The design is very simple, althouth it is fully responsive and mobile friendly. In this project i implemented many daily features that they are often used in eshop websites. The project includes login / registration page, dynamic orders based on client id, dynamic product display based on availability and fully scalable admin panel which includes diagraph, add products or edit / delete them from the list. In the admin panel , the user can also see the contact list.",
+        description: "A very usefull project which helped me understand the backend of a website. The design is very simple, althouth it is fully responsive and mobile friendly. In this project i implemented many daily features that they are often used in eshop applications. The project includes login / registration page, dynamic orders based on client id, dynamic product display based on availability and fully scalable admin panel which includes diagraph, add products or edit / delete them from the list. In the admin panel , the user can also see the contact list.",
         technologies: ["Html", "Css", "Javascript", "PHP", "MySql"]
     },
     {
