@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+  --mainBackgroundColor: rgba(10, 25, 47, 0.85);
+  --mainColor: #e5e5e5;
+  --secondaryColor: #93acb5;
+  --green: #02c39a;
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--mainBackgroundColor);
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background-color: var(--mainBackgroundColor);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  min-height: 100vh;
+}
+
+nav,
+main,
+footer {
+  background-color: var(--mainBackgroundColor);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--mainColor);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--secondaryColor);
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--mainColor);
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+h5 {
+  color: var(--mainColor);
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--secondaryColor);
+}
+
+span {
+  color: var(--green);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-nav a {
+  color: var(--mainColor);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+
+.navbar-nav a:hover {
+  color: var(--green);
+  padding-left: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(229, 229, 229)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.btn {
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.btn:hover {
+  background-color: var(--green);
+  color: var(--mainColor);
+}
+
+.card {
+  background-color: var(--clr-primary-1);
+}
+
+.card-body {
+  padding: 1rem 0;
+}
+
+.card-title {
+  color: var(--mainColor);
+}
+
+.card-text button {
+  color: var(--mainColor);
+  border: none;
+  background-color: inherit;
+}
+
+.card-text button:hover {
+  color: var(--secondaryColor);
+  border: none;
+  background-color: inherit;
+}
