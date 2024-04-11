@@ -9,8 +9,27 @@ import car from "./images/car-rental.png";
 import timeseries from "./images/Timeseries.png";
 import markdown from "./images/Markdown.png";
 import weather from "./images/Weather.png";
+import hotels from "./images/Hotels.png";
 
 export const projects = [
+  {
+    id: "12",
+    name: "Hotels",
+    link: "https://thanosdev.com/Hotels_App/",
+    img: hotels,
+    description:
+      "A replica of the Booking. The user can select the place that he wants to visit and filter the data based on filters. The application was build using booking's api.",
+    technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+  },
+  {
+    id: "3",
+    name: "Weather",
+    link: "https://thanosdev.com/AgroApps_Weather_App/",
+    img: weather,
+    description:
+      "A simple, modern, responsive and elegant weather application that displays weather information about a specific location(Thessaloniki). The data is provided in api folder and more specific in weatherAPI.json file. The user can select to see information about current weather, today's weather or a date in the near future.",
+    technologies: ["HTML", "SASS", "JAVASCRIPT", "REACT"],
+  },
   {
     id: "1",
     name: "Markdown",
@@ -28,15 +47,6 @@ export const projects = [
     description:
       "A very simple web application in vue. The application displays data in table and in chart based on user's selected dates.",
     technologies: ["HTML", "CSS", "JAVASCRIPT", "VUE"],
-  },
-  {
-    id: "3",
-    name: "Weather",
-    link: "https://thanosdev.com/AgroApps_Weather_App/",
-    img: weather,
-    description:
-      "A simple, modern, responsive and elegant weather application that displays weather information about a specific location(Thessaloniki). The data is provided in api folder and more specific in weatherAPI.json file. The user can select to see information about current weather, today's weather or a date in the near future.",
-    technologies: ["HTML", "SASS", "JAVASCRIPT", "REACT"],
   },
   {
     id: "4",
