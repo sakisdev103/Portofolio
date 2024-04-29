@@ -1,5 +1,4 @@
 import myCompany from "./images/my-company.png";
-import blackjack from "./images/blackjack.png";
 import grocery from "./images/Grocery Bud.png";
 import expenses from "./images/expense tracker app.png";
 import movies from "./images/Movies.png";
@@ -10,6 +9,7 @@ import timeseries from "./images/Timeseries.png";
 import markdown from "./images/Markdown.png";
 import weather from "./images/Weather.png";
 import hotels from "./images/Hotels.png";
+import news from "./images/News-App.png";
 
 export const projects = [
   {
@@ -19,7 +19,7 @@ export const projects = [
     img: hotels,
     description:
       "A replica of the Booking. The user can select the place that he wants to visit and filter the data based on filters. The application was build using booking's api.",
-    technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    technologies: ["HTML", "BOOTSTRAP", "JAVASCRIPT", "REACT"],
   },
   {
     id: "3",
@@ -28,7 +28,7 @@ export const projects = [
     img: weather,
     description:
       "A simple, modern, responsive and elegant weather application that displays weather information about a specific location(Thessaloniki). The data is provided in api folder and more specific in weatherAPI.json file. The user can select to see information about current weather, today's weather or a date in the near future.",
-    technologies: ["HTML", "SASS", "JAVASCRIPT", "REACT"],
+    technologies: ["HTML", "BOOTSTRAP", "JAVASCRIPT", "REACT"],
   },
   {
     id: "1",
@@ -38,6 +38,15 @@ export const projects = [
     description:
       "The Markdown App is a simple app which helps write documentation. You can make changes in editor and see the results live on your screen.",
     technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+  },
+  {
+    id: "13",
+    name: "News",
+    link: "https://thanosdev.com/News/",
+    img: news,
+    description:
+      "A simple, modern, responsive and elegant news application. The user can see the latest news.",
+    technologies: ["HTML", "MATERIAL UI", "JAVASCRIPT", "REACT"],
   },
   {
     id: "2",
@@ -109,14 +118,6 @@ export const projects = [
     img: grocery,
     description:
       "Developed using advanced javascript, despite the simplicity of the design. The user can add products to his list, delete or edit them.",
-    technologies: ["HTML", "CSS", "JAVASCRIPT"],
-  },
-  {
-    id: "11",
-    name: "BlackJack",
-    link: "https://thanosdev.com/BlackJack/",
-    img: blackjack,
-    description: "The famous blackjack game into a fully working application.",
     technologies: ["HTML", "CSS", "JAVASCRIPT"],
   },
 ];
