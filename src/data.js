@@ -1,6 +1,6 @@
 import myCompany from "./images/my-company.png";
 import grocery from "./images/Grocery Bud.png";
-import expenses from "./images/expense tracker app.png";
+import expenses from "./images/Expenses.png";
 import movies from "./images/Movies.png";
 import camps from "./images/Camps.png";
 import gym2 from "./images/Gym2.png";
@@ -13,7 +13,7 @@ import news from "./images/News-App.png";
 
 export const projects = [
   {
-    id: "12",
+    id: "1",
     name: "Hotels",
     link: "https://thanosdev.com/Hotels_App/",
     img: hotels,
@@ -22,7 +22,7 @@ export const projects = [
     technologies: ["HTML", "BOOTSTRAP", "JAVASCRIPT", "REACT"],
   },
   {
-    id: "3",
+    id: "2",
     name: "Weather",
     link: "https://thanosdev.com/AgroApps_Weather_App/",
     img: weather,
@@ -31,7 +31,7 @@ export const projects = [
     technologies: ["HTML", "BOOTSTRAP", "JAVASCRIPT", "REACT"],
   },
   {
-    id: "1",
+    id: "3",
     name: "Markdown",
     link: "https://thanosdev.com/Markdown/",
     img: markdown,
@@ -40,7 +40,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
   },
   {
-    id: "13",
+    id: "4",
     name: "News",
     link: "https://thanosdev.com/News/",
     img: news,
@@ -49,7 +49,16 @@ export const projects = [
     technologies: ["HTML", "MATERIAL UI", "JAVASCRIPT", "REACT"],
   },
   {
-    id: "2",
+    id: "5",
+    name: "Expenses Tracker",
+    link: "https://thanosdev.com/Expenses/",
+    img: expenses,
+    description:
+      "A simple, modern application in which you can keep track your incomes and your spendings.",
+    technologies: ["HTML", "MATERIAL UI", "JAVASCRIPT", "REACT"],
+  },
+  {
+    id: "6",
     name: "Timeseries Visualization",
     link: "https://thanosdev.com/Timeseries_Data_Visualization/",
     img: timeseries,
@@ -58,7 +67,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JAVASCRIPT", "VUE"],
   },
   {
-    id: "4",
+    id: "7",
     name: "Business Site",
     link: "https://thanosdev.com/Business_Site/",
     img: myCompany,
@@ -67,7 +76,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JAVASCRIPT"],
   },
   {
-    id: "5",
+    id: "8",
     name: "Gym Tracker",
     link: "https://thanosdev.com/Gym_Tracker/",
     img: gym2,
@@ -76,7 +85,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JAVASCRIPT", "PHP", "MYSQL"],
   },
   {
-    id: "6",
+    id: "9",
     name: "Car Rental",
     link: "https://thanosdev.com/Car_Rental/",
     img: car,
@@ -85,7 +94,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JAVASCRIPT", "PHP", "MYSQL"],
   },
   {
-    id: "7",
+    id: "10",
     name: "Movies",
     link: "https://thanosdev.com/Movies_App/",
     img: movies,
@@ -94,7 +103,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
   },
   {
-    id: "8",
+    id: "11",
     name: "Camps",
     link: "https://thanosdev.com/Camps-App/",
     img: camps,
@@ -103,16 +112,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
   },
   {
-    id: "9",
-    name: "Expense Tracker",
-    link: "https://thanosdev.com/Expense_Tracker/",
-    img: expenses,
-    description:
-      "The user can add an income or an expence and check his balance, furthermore, he can edit / delete items. The items are stored in local storage",
-    technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
-  },
-  {
-    id: "10",
+    id: "12",
     name: "Grocery",
     link: "https://thanosdev.com/Grocery_App/",
     img: grocery,
