@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { projects } from "../data";
+import { useFetchProjects } from "../fetchProjects";
 
 const ProjectList = () => {
+  const { isLoading, projects } = useFetchProjects();
+
   //Show more projects
 
   const [showMore, setShowMore] = useState(false);
@@ -28,6 +30,20 @@ const ProjectList = () => {
     }
   };
 
+  if (isLoading) {
+    return (
+      <div className="container-fluid text-center my-5 ">
+        <div
+          className="spinner-border text-light"
+          style={{ width: "3rem", height: "3rem" }}
+          role="status"
+        >
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
       <h3>
@@ -36,11 +52,13 @@ const ProjectList = () => {
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-gap-4">
         {projects
           .slice(0, showMore === false ? "4" : projects.length)
-          .map(({ id, name, link, img, description, technologies }) => {
+          .map((project) => {
+            const { id, name, link, image, description, technologies } =
+              project;
             return (
               <div className="col" key={id}>
                 <div className="card p-3">
-                  <img src={img} className="card-img-top" alt="Project" />
+                  <img src={image} className="card-img-top" alt="Project" />
                   <div className="card-body">
                     <h3 className="card-title">{name}</h3>
                     <p className="card-text">
