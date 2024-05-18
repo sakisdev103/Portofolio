@@ -49,7 +49,7 @@ const ProjectList = () => {
       <h3>
         <span>02.</span>Work
       </h3>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-gap-4">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-gap-4">
         {projects
           .slice(0, showMore === false ? "4" : projects.length)
           .map((project) => {
@@ -69,9 +69,21 @@ const ProjectList = () => {
                         {readMore.id === id ? "READ LESS" : "READ MORE"}
                       </button>
                     </p>
-                    <p style={{ color: "hsl(205, 86%, 81%)" }}>
-                      {technologies + ""}
-                    </p>
+                    <div className="d-flex align-items-center gap-1">
+                      {technologies.map((tech) => {
+                        return (
+                          <p
+                            className="p-2 text-center rounded"
+                            style={{
+                              backgroundColor: "#000",
+                              fontSize: "0.8rem",
+                            }}
+                          >
+                            {tech}
+                          </p>
+                        );
+                      })}
+                    </div>
                     <div className="text-center">
                       <a className="btn" href={link}>
                         Live Site
