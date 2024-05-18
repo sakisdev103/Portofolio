@@ -17,7 +17,7 @@ const Main = () => {
         <div className="container my-5" id="work">
           <ProjectList />
         </div>
-        <div className="container my-5" id="contact">
+        <div className="container my-5">
           <Contact />
         </div>
       </main>

@@ -6,15 +6,14 @@ const Navbar = () => {
     setNav(!nav);
   };
   const categories = [
-    { id: "01", name: "Home", link: "" },
-    { id: "02", name: "About", link: "about" },
-    { id: "03", name: "Work", link: "work" },
-    { id: "04", name: "Contact", link: "contact" },
+    { name: "Home", link: "" },
+    { name: "About", link: "about" },
+    { name: "Work", link: "work" },
   ];
   return (
     <>
       <nav className="navbar navbar-expand-sm p-3">
-        <div className="container-fluid">
+        <div className="container">
           <img
             src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/36/null/external-developer-web-development-flaticons-lineal-color-flat-icons-2.png"
             className="navbar-brand"
@@ -40,10 +39,7 @@ const Navbar = () => {
               {categories.map((category) => {
                 return (
                   <li className="nav-item" key={category.id}>
-                    <a href={`#${category.link}`}>
-                      <span>{category.id}.</span>
-                      {category.name}
-                    </a>
+                    <a href={`#${category.link}`}>{category.name}</a>
                   </li>
                 );
               })}
