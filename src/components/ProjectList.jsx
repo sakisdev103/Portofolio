@@ -98,8 +98,6 @@ const ProjectList = () => {
                           stroke="#e5e5e5"
                           fill="none"
                           viewBox="0 0 24 24"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
                           height="2.5rem"
                           width="2.5rem"
                           xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +122,7 @@ const ProjectList = () => {
                         <svg
                           stroke="#e5e5e5"
                           fill="#e5e5e5"
-                          stroke-width="0"
                           viewBox="0 0 448 512"
-                          class="h-8 w-8 text-slate-500 hover:text-black duration-300"
                           height="2.5rem"
                           width="2.5rem"
                           xmlns="http://www.w3.org/2000/svg"
