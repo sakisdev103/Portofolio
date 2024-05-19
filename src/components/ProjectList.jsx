@@ -51,7 +51,7 @@ const ProjectList = () => {
       </h3>
       <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-gap-4">
         {projects
-          .slice(0, showMore === false ? "4" : projects.length)
+          .slice(0, showMore === false ? "6" : projects.length)
           .map((project) => {
             const { id, name, link, image, description, technologies } =
               project;
@@ -73,13 +73,14 @@ const ProjectList = () => {
                       {technologies.map((tech) => {
                         return (
                           <p
+                            key={tech}
                             className="p-2 text-center rounded"
                             style={{
                               backgroundColor: "#000",
                               fontSize: "0.8rem",
                             }}
                           >
-                            {tech}
+                            {tech === "MATERIAL UI" ? "MUI" : tech}
                           </p>
                         );
                       })}

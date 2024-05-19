@@ -38,7 +38,7 @@ const Navbar = () => {
             <ul className="navbar-nav mb2 mb-lg-0">
               {categories.map((category) => {
                 return (
-                  <li className="nav-item" key={category.id}>
+                  <li className="nav-item" key={category.name}>
                     <a href={`#${category.link}`}>{category.name}</a>
                   </li>
                 );
