@@ -12,13 +12,20 @@ const About = () => {
             <span>01.</span>About Me
           </h3>
           <p>
-            My name is Thanos Trentsios. I am a Frontend Developer with strong
-            skills at Javascript and ReactJs with work experience and
-            project-build experience. In 2019 i went to my local university to
-            study computer science. In the beggining of 2023 i served as a
-            member of the special forces, because it was been my dream. For the
-            future i want to work as front end web developer and continue to
-            build applications.
+            Hello! My name is Thanos Trentsios. I am a passionate Frontend
+            Developer specializing in JavaScript and ReactJS. My journey in the
+            world of coding began in 2019 when I enrolled at my local university
+            to study computer science. During my academic career, I not only
+            acquired a solid foundation in software development but also honed
+            my skills through various projects and work experiences. In early
+            2023, I had the unique opportunity to serve as a member of the
+            special forces, fulfilling a lifelong dream. This experience
+            instilled in me a sense of discipline, resilience, and teamwork,
+            qualities that I bring into my professional life as a developer.
+            Looking ahead, my goal is to continue evolving as a frontend
+            developer, creating innovative and user-friendly applications. I am
+            excited about the future and eager to contribute to cutting-edge
+            projects that make a real difference.
           </p>
         </div>
         <div className="col-12 col-lg-6">
