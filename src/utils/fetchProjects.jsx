@@ -23,7 +23,7 @@ export const useFetchProjects = () => {
         const image = img?.fields?.file.url;
         return { name, link, gitLink, description, id, technologies, image };
       });
-      setProjects(projects.reverse());
+      setProjects(projects);
       setIsLoading(false);
     } catch (error) {
       console.log(error);

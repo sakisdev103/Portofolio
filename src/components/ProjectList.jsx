@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useFetchProjects } from "../fetchProjects";
+import { useFetchProjects } from "../utils/fetchProjects";
 
 const ProjectList = () => {
   const { isLoading, projects } = useFetchProjects();
@@ -53,15 +53,7 @@ const ProjectList = () => {
         {projects
           .slice(0, showMore === false ? "6" : projects.length)
           .map((project) => {
-            const {
-              id,
-              name,
-              link,
-              gitLink,
-              image,
-              description,
-              technologies,
-            } = project;
+            const { id, name, link, gitLink, image, description } = project;
             return (
               <div className="col" key={id}>
                 <div className="card p-3">
@@ -71,53 +63,39 @@ const ProjectList = () => {
                     <p className="card-text">
                       {readMore.id === id
                         ? description
-                        : description.slice(0, 50) + `...`}
+                        : description.slice(0, 85) + `...`}
                       <button className="btn" onClick={() => readMoreFunc(id)}>
-                        {readMore.id === id ? "READ LESS" : "READ MORE"}
+                        {readMore.id === id ? "Read Less" : "Read More"}
                       </button>
                     </p>
-                    <div className="d-flex align-items-center gap-1">
-                      {technologies.map((tech) => {
-                        return (
-                          <p
-                            key={tech}
-                            className="p-2 text-center rounded"
-                            style={{
-                              backgroundColor: "#000",
-                              fontSize: "0.8rem",
-                            }}
-                          >
-                            {tech}
-                          </p>
-                        );
-                      })}
-                    </div>
                     <div className="d-flex gap-3 align-items-center justify-content-center">
-                      <a href={link}>
-                        <svg
-                          stroke="#e5e5e5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="2.5rem"
-                          width="2.5rem"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
+                      {link !== "#" && (
+                        <a href={link}>
+                          <svg
+                            stroke="#e5e5e5"
                             fill="none"
-                          ></path>
-                          <path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4"></path>
-                          <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4"></path>
-                          <path d="M12.5 3a16.989 16.989 0 0 1 1.828 4"></path>
-                          <path d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4"></path>
-                          <path d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4"></path>
-                          <path d="M12.5 21a16.989 16.989 0 0 0 1.828 -4"></path>
-                          <path d="M2 10l1 4l1.5 -4l1.5 4l1 -4"></path>
-                          <path d="M17 10l1 4l1.5 -4l1.5 4l1 -4"></path>
-                          <path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4"></path>
-                        </svg>
-                      </a>
+                            viewBox="0 0 24 24"
+                            height="2.5rem"
+                            width="2.5rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              stroke="none"
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            ></path>
+                            <path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4"></path>
+                            <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4"></path>
+                            <path d="M12.5 3a16.989 16.989 0 0 1 1.828 4"></path>
+                            <path d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4"></path>
+                            <path d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4"></path>
+                            <path d="M12.5 21a16.989 16.989 0 0 0 1.828 -4"></path>
+                            <path d="M2 10l1 4l1.5 -4l1.5 4l1 -4"></path>
+                            <path d="M17 10l1 4l1.5 -4l1.5 4l1 -4"></path>
+                            <path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4"></path>
+                          </svg>
+                        </a>
+                      )}
                       <a href={gitLink}>
                         <svg
                           stroke="#e5e5e5"

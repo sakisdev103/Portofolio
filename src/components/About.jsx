@@ -1,5 +1,5 @@
 import React from "react";
-import { useFetchIcons } from "../fetchIcons";
+import { useFetchIcons } from "../utils/fetchIcons";
 
 const About = () => {
   const { icons } = useFetchIcons();
