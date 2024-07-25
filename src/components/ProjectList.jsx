@@ -6,15 +6,15 @@ const ProjectList = () => {
 
   //Show more projects
 
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
   const [readMore, setReadMore] = useState({
     id: -1,
     show: false,
   });
 
-  const showMoreFunc = () => {
-    setShowMore(!showMore);
-  };
+  // const showMoreFunc = () => {
+  //   setShowMore(!showMore);
+  // };
 
   const readMoreFunc = (id) => {
     if (readMore.id === id) {
@@ -51,7 +51,7 @@ const ProjectList = () => {
       </h3>
       <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-gap-4">
         {projects
-          .slice(0, showMore === false ? "6" : projects.length)
+          // .slice(0, showMore === false ? "6" : projects.length)
           .map((project) => {
             const { id, name, link, gitLink, image, description } = project;
             return (
@@ -64,7 +64,10 @@ const ProjectList = () => {
                       {readMore.id === id
                         ? description
                         : description.slice(0, 85) + `...`}
-                      <button className="btn" onClick={() => readMoreFunc(id)}>
+                      <button
+                        className="btn  py-0 align-bottom"
+                        onClick={() => readMoreFunc(id)}
+                      >
                         {readMore.id === id ? "Read Less" : "Read More"}
                       </button>
                     </p>
@@ -115,11 +118,11 @@ const ProjectList = () => {
             );
           })}
       </div>
-      <div className="container text-center my-4">
+      {/* <div className="container text-center my-4">
         <button onClick={showMoreFunc} className="btn">
           {showMore === true ? `Show Less` : `Show More`}
         </button>
-      </div>
+      </div> */}
     </>
   );
 };
