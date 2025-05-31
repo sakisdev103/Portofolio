@@ -1,0 +1,27 @@
+{
+  "rewrites": [
+    {
+      "source": "/GymNotes-Typescript/:match*",
+      "destination": "https://gym-notes-typescript-8m5j16iml-sakisdev103s-projects.vercel.app/:match*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/GymNotes-Typescript/assets/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://gym-notes-typescript-8m5j16iml-sakisdev103s-projects.vercel.app"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-Requested-With, Content-Type, Accept"
+        }
+      ]
+    }
+  ]
+}
